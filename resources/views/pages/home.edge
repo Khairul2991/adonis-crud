@@ -1,0 +1,13 @@
+@layouts.main()
+  @slot('title')
+    Home Page
+  @endslot
+
+  @slot('body')
+  <div class="flex flex-col justify-center items-center h-screen">
+    <div class="bg-sky-200 rounded-full p-4">
+      <img src="{{asset('/resources/images/2.png')}}" class="w-auto h-60 rounded mb-8 mx-auto" alt="Hero Img">
+    </div>
+  </div>
+  @endslot
+@end

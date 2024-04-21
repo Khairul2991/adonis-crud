@@ -1,0 +1,31 @@
+@layouts.main()
+  @slot ('title')
+    Home
+  @endslot
+  @slot ('body')
+  <div class="flex flex-col items-center justify-center min-h-screen bg-sky-300">
+    <img src="{{asset('/resources/images/1.png')}}" class="w-auto h-44 rounded mt-12 mx-auto" alt="Hero Img">
+    <div class="bg-teal-400 rounded-lg px-10 pt-4 pb-8 mt-6">
+      <h1 class="text-3xl font-bold ml-10 mb-4">My Profile</h1>
+      <table class="mx-auto border-collapse border border-black">
+          <tr>
+            <td class="border border-black px-4 py-2 font-semibold">Nama</td>
+            <td class="border border-black px-4 py-2">Khairul Auni</td>
+          </tr>
+          <tr>
+            <td class="border border-black px-4 py-2 font-semibold">NPM</td>
+            <td class="border border-black px-4 py-2">2108107010016</td>
+          </tr>
+          <tr>
+            <td class="border border-black px-4 py-2 font-semibold">Alamat</td>
+            <td class="border border-black px-4 py-2">Darussalam</td>
+          </tr>
+          <tr>
+            <td class="border border-black px-4 py-2 font-semibold">Hobi</td>
+            <td class="border border-black px-4 py-2">Membaca</td>
+          </tr>
+      </table>
+    </div>
+</div>
+@endslot
+@end
